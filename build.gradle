@@ -63,3 +63,8 @@ bootRun {
     // Specify the main class of the application.
     mainClass = 'com.marvel.api.App'
 }
+
+task karateExecute(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    main = 'com.intuit.karate.Main'
+}
